@@ -83,7 +83,7 @@ redirect('/dashboard/invoices');
 
 
 export async function deleteInvoice(id: string) {
-    // throw new Error('Failed to Delete Invoice');
+    throw new Error('Failed to Delete Invoice');
 
     try {
       await sql`DELETE FROM invoices WHERE id = ${id}`;

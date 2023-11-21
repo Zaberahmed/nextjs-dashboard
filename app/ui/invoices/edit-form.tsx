@@ -52,14 +52,14 @@ export default function EditInvoiceForm({
             </select>
             <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
-          <div id="customer-error" aria-live="polite" aria-atomic="true">
+          {/* <div id="customer-error" aria-live="polite" aria-atomic="true">
             {state.errors?.customerId &&
             state.errors.customerId.map((error: string) => (
             <p className="mt-2 text-sm text-red-500" key={error}>
               {error}
             </p>
           ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Invoice Amount */}
@@ -131,14 +131,14 @@ export default function EditInvoiceForm({
                 </label>
               </div>
             </div>
-            <div id="status-error" aria-live="polite" aria-atomic="true">
+            {/* <div id="status-error" aria-live="polite" aria-atomic="true">
             {state.errors?.status &&
             state.errors.status.map((error: string) => (
             <p className="mt-2 text-sm text-red-500" key={error}>
               {error}
             </p>
           ))}
-          </div>
+          </div> */}
           </div>
         </fieldset>
         <div id="form-error" aria-live="polite" aria-atomic="true">

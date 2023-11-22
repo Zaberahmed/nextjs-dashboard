@@ -198,7 +198,7 @@ const CUSTOMERS_PER_PAGE = 5;
 export async function fetchFilteredCustomers(query: string, currentPage: number) {
   
   // await new Promise((resolve)=> setTimeout(resolve,5000))
-  const offset = (currentPage - 1) * ITEMS_PER_PAGE;
+  const offset = (currentPage - 1) * CUSTOMERS_PER_PAGE;
   noStore()
   try {
     const data = await sql<CustomersTable>`
